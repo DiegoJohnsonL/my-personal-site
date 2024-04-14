@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  font-family: "General Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Urbanist", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  font-style: normal;
   color-scheme: light;
 
   font-synthesis: none;
@@ -15,11 +18,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
 }
